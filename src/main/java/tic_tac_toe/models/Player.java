@@ -1,21 +1,21 @@
 package tic_tac_toe.models;
 
 public class Player {
-    private  Symbol symbol;
+    private  char symbol;
     private  String name;
     private PlayerType playerType;
 
-    public Player(Symbol symbol, String name , PlayerType playerType) {
+    public Player(char symbol, String name , PlayerType playerType) {
         this.symbol = symbol;
         this.name = name;
         this.playerType = playerType;
     }
 
-    public Symbol getSymbol() {
+    public char getSymbol() {
         return symbol;
     }
 
-    public void setSymbol(Symbol symbol) {
+    public void setSymbol(char symbol) {
         this.symbol = symbol;
     }
 

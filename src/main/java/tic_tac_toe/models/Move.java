@@ -2,6 +2,7 @@ package tic_tac_toe.models;
 
 public class Move {
 
+    //Who is the player making the move and on which cell he is making the move
     private Player player;
     private  Cell cell;
 

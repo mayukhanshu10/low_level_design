@@ -5,8 +5,10 @@ import java.util.List;
 
 public class Board {
 
+    //Board will be of Given size*size ie 2D matrix
+
     private int size;
-    private List<List<Cell>> board;
+    private List<List<Cell>> board; //2D arraylist
 
 
     public Board(int size) {

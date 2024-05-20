@@ -14,7 +14,8 @@ public class IntelligentStudent extends Student {
     }
 
     private IntelligentStudent(IntelligentStudent student) {
-        super(student);
+        super(student); //Remaining attributes are same as of parent class hence we use super() so that we
+                        // can use parents constructor to initalize same attributes
         this.iq = student.iq;
     }
 
@@ -22,4 +23,9 @@ public class IntelligentStudent extends Student {
     public IntelligentStudent clone() {
         return new IntelligentStudent(this);
     }
+
+     /*
+        This clone method is overriden cauz we have implemented Prototype interface to this class and since
+        clone method in Prototype is of generic return type, hece from IntelligentStudent class we are returning IntelligentStudent object.
+     */
 }

@@ -50,4 +50,9 @@ public class Student implements Prototype<Student> {
     public Student clone() {
         return new Student(this);
     }
+
+    /*
+        This clone method is overriden cauz we have implemented Prototype interface to this class and since
+        clone method in Prototype is of generic return type, hece from student class we are returning Student.
+     */
 }

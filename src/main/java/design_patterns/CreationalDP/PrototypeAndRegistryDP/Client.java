@@ -18,6 +18,10 @@ public class Client {
 
     public static void main(String[] args) {
         StudentRegistry registry = new StudentRegistry();
+        /*
+            As soon as our program starts, StudentRegistry is made with all the prototype assigned
+            to the map present in registry.
+         */
         fillRegistry(registry);
 
         //ajith belongs to apr22 batch
